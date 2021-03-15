@@ -19,6 +19,7 @@ module.exports = function getSeason(date) {
       if(date[0] === seasons[i][j]) return i;
     }
   }
-}else throw new Error(null);
+  
+}else if (date === null) return 'Unable to determine the time of year!'
 
 };
